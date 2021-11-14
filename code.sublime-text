@@ -1,0 +1,20 @@
+Để thiết lập trình compiler Python bằng Sublime Text ta có bước như sau :
+
+B1: tìm kiếm
+Preferences / Package Control / Package control : Install Package
+
+B2: cài đặt trình compiler
+tìm SublimeREPL và cài đặt (cái này còn hỗ trợ nhiều ngôn ngữ khác, các bạn khám phá nhé)
+
+B3: chạy file
+Tools / SublimeREPL / Python / RUN current file
+
+B4: cài đặt phím tắt hot key
+Preferences / Key Bindings
+[
+	{ "keys": ["alt+b"], "command": "run_existing_window_command", "args":
+{
+    "id": "repl_python_run",
+    "file": "config/Python/Main.sublime-menu"
+}}
+]
